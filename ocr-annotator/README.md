@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# 📝 OCR Annotator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack application for verifying OCR outputs from word images.  
+Built with **React (frontend)**, **Flask + EasyOCR (backend)**, and **Firebase (storage & authentication)**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
+- Upload and process word images using EasyOCR.
+- Display OCR predictions alongside images for verification.
+- Annotators choose: ✅ Correct | ❌ Wrong | ➖ Skip.
+- Keyboard shortcuts: **1** = Correct, **2** = Wrong, **3** = Skip.
+- Progress bar with task completion tracking.
+- Annotations saved per user in Firebase Firestore.
+- Supports multiple users simultaneously.
+- Future-ready for millions of images with batched tasks.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ⚙️ Setup Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Clone Repository
+```bash
+git clone https://github.com/yourusername/ocr-annotator.git
 
-### `npm test`
+2. Run frontend
+cd ocr-annotator/ocr-annotator
+npm install
+npm run dev
+Runs at localhost http://127.0.0.1:5173/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Run the backend
+cd ocr-annotator/ocr-annotator/backend
+pip install flask flask-cors easyocr torch
+python ocr_server.py
+Runs at localhost http://127.0.0.1:5000 
 
-### `npm run build`
+## Data Format
+[
+  { "id": 1, "image": "/images/word1.png" },
+  { "id": 2, "image": "/images/word2.png" }
+]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Open the frontend in your browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Each task shows an image + OCR extracted text.
 
-### `npm run eject`
+3. Choose:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+✅ Correct
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+❌ Wrong
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+➖ Skip
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Keyboard Shortcuts:
 
-## Learn More
+1 → Correct
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2 → Wrong
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3 → Skip
 
-### Code Splitting
+## Example Workflow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Start backend → python ocr_server.py
 
-### Analyzing the Bundle Size
+2. Start frontend → npm run dev
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Open the app and begin annotation.

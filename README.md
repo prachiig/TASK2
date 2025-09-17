@@ -5,15 +5,15 @@ Built with **React (frontend)**, **Flask + EasyOCR (backend)**, and **Firebase (
 
 ---
 
-## 🚀 Features
+## Features
 - Upload and process word images using EasyOCR.
-- Display OCR predictions alongside images for verification.
+- Display OCR predictions alongwith the images for human verification.
 - Annotators choose: ✅ Correct | ❌ Wrong | ➖ Skip.
 - Keyboard shortcuts: **1** = Correct, **2** = Wrong, **3** = Skip.
 - Progress bar with task completion tracking.
-- Annotations saved per user in Firebase Firestore.
+- Annotations saved per task in Firebase Firestore.
 - Supports multiple users simultaneously.
-- Future-ready for millions of images with batched tasks.
+- User authentication 
 
 ---
 

@@ -45,29 +45,21 @@ Runs at localhost http://127.0.0.1:5000
 ## Usage
 
 1. Open the frontend in your browser.
-
 2. Each task shows an image + OCR extracted text.
-
 3. Choose:
 
 ✅ Correct
-
 ❌ Wrong
-
 ➖ Skip
 
 Keyboard Shortcuts:
 
 1 → Correct
-
 2 → Wrong
-
 3 → Skip
 
 ## Example Workflow
 
 1. Start backend → python ocr_server.py
-
 2. Start frontend → npm run dev
-
 3. Open the app and begin annotation.

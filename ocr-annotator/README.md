@@ -19,8 +19,9 @@ Built with **React (frontend)**, **Flask + EasyOCR (backend)**, and **Firebase (
 
 ## ⚙️ Setup Instructions
 
-### 1. Clone Repository
+### 1. Clone Repository and Run the app
 ```bash
+1. Clone repo
 git clone https://github.com/yourusername/ocr-annotator.git
 
 2. Run frontend

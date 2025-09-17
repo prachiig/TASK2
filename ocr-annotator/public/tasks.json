@@ -1,0 +1,5 @@
+[
+  { "id": "w1", "imageUrl": "/images/w1.png", "ocr_text": "भारत" },
+  { "id": "w2", "imageUrl": "/images/w2.png", "ocr_text": "hello" },
+  { "id": "w3", "imageUrl": "/images/w3.png", "ocr_text": "किताब" }
+]

@@ -1,0 +1,13 @@
+[
+  { "id": 1,  "image": "/images/word1.png" },
+  { "id": 2,  "image": "/images/word2.png" },
+  { "id": 3,  "image": "/images/word3.png" },
+  { "id": 4,  "image": "/images/word4.png" },
+  { "id": 5,  "image": "/images/word5.png" },
+  { "id": 6,  "image": "/images/word6.png" },
+  { "id": 7,  "image": "/images/word7.png" },
+  { "id": 8,  "image": "/images/word8.png" },
+  { "id": 9,  "image": "/images/word9.png" },
+  { "id": 10,  "image": "/images/word10.png" }
+ 
+]

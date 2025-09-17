@@ -1,4 +1,4 @@
-# 📝 OCR Annotator
+# OCR Annotator
 
 A full-stack application for verifying OCR outputs from word images.  
 Built with **React (frontend)**, **Flask + EasyOCR (backend)**, and **Firebase (storage & authentication)**.
@@ -17,7 +17,7 @@ Built with **React (frontend)**, **Flask + EasyOCR (backend)**, and **Firebase (
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone Repository and Run the app
 ```bash
